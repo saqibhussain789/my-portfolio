@@ -1,6 +1,6 @@
-@import 'some-styles.css';
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components; */
 @tailwind utilities;
 
 @layer base {
@@ -68,12 +68,12 @@
 }
 
 @layer base {
-  * {
-    @apply border border-gray-300 dark:border-gray-700 !scroll-smooth;
-  }
-  body {
+  /* * {
+    @apply border-border !scroll-smooth;
+  } */
+  /* body {
     @apply bg-background text-foreground;
-  }
+  } */
   button {
     @apply active:outline-none;
   }
